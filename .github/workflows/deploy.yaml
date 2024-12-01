@@ -11,6 +11,7 @@ env:
   GAR_IMAGE_NAME: '${{ secrets.GAR_IMAGE_NAME }}'
   GAR_REPO_NAME: '${{ secrets.GAR_REPO_NAME }}'
   GAR_REGION: '${{ secrets.GAR_REGION }}'
+  GCR_SERVICE: '${{ secrets.GCR_SERVICE }}'
 
 jobs:
   deploy:
