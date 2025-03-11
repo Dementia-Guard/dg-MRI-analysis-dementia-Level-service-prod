@@ -28,6 +28,7 @@ async def lifespan():
     logger.info("API is starting up...")
 
 
-@app.get("/health")
-async def health_check():
-    return {"status": "healthy"}
+@app.get("/")
+async def is_running():
+    return {"status": "API is Running"}
+
