@@ -11,7 +11,7 @@ model = load_model(MODEL_PATH)
 
 
 # API root to confirm it's running
-@router.get("/")
+@router.get("/details")
 async def root():
     return {
         "message": "Alzheimer's Detection API is running",

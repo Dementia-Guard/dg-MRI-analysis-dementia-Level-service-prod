@@ -20,7 +20,7 @@ app.add_middleware(
 )
 
 # Include prediction router
-app.include_router(predictions.router, prefix=f"/api/{API_VERSION}", tags=["Predictions"])
+app.include_router(predictions.router, tags=["Predictions"])
 
 
 @asynccontextmanager
@@ -30,5 +30,5 @@ async def lifespan():
 
 @app.get("/")
 async def is_running():
-    return {"status": "API is Running"}
+    return {"status": "MRI Analysis Service API is Running"}
 
